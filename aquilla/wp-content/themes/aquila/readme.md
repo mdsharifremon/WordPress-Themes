@@ -1,1 +1,0 @@
-## Aquilla WordPress Theme
