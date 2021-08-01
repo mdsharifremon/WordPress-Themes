@@ -7,3 +7,4 @@
     <title>Aquilla WordPress Theme</title>
 </head>
 <body>
+    <h1>Header</h1>
