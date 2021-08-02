@@ -11,3 +11,9 @@ Tags: WordPress Theme, Aquilla, Custom Theme
 Description: Aquilla is custom wordpress theme with elegant design and modern look.
 Text Domain: aquilla
 */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
