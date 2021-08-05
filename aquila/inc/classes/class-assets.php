@@ -14,12 +14,6 @@ class Assets{
 
     protected function __construct()
     {
-        // Load Class  
-        $this->set_hooks();
-    }
-
-    protected function set_hooks()
-    {
         // All actions && filters
         add_action('wp_enqueue_scripts', [$this, 'register_styles']);
         add_action('wp_enqueue_scripts', [$this, 'register_scripts']);

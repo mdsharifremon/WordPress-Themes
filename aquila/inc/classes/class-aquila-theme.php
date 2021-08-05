@@ -13,8 +13,12 @@ use AQUILA_THEME\Inc\Traits\Singleton;
    use Singleton;
 
    protected function __construct(){ 
-       // Load Class  
+       // Load Classes 
         Assets::get_instance();
+        Menus::get_instance();
+        Admin::get_instance();
+
+        // Load Hooks
         $this->set_hooks();
    }
 
