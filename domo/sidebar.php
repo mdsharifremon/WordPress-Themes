@@ -1,7 +1,7 @@
 
 <?php
 /**
- * Index file
+ * Sidebar Template
  * @package Aquilla WordPress Theme 
  */
 ?>

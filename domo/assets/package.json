@@ -1,0 +1,19 @@
+{
+  "name": "aquila-frontend",
+  "version": "1.0.0",
+  "description": "Aquilla WordPress Theme Frontend",
+  "main": "index.js",
+  "scripts": {
+    "compile":"sass ./sass/style.scss ./src/library/css/bootstrap.css --watch"
+  },
+  "keywords": [
+    "WordPress",
+    "Theme",
+    "Aquila"
+  ],
+  "author": "Sharif Uddin",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.0.2"
+  }
+}

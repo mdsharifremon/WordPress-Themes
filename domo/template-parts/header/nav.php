@@ -17,14 +17,10 @@ $footer_menu = wp_get_nav_menu_items($footer_menu_id);
     <div class="container">
         <a class="navbar-brand" href="#">
             <?php
-            if (has_custom_logo()):
-                $custom_logo_id = get_theme_mod('custom_logo');
-                $image = wp_get_attachment_image_src($custom_logo_id, 'full'); 
+            if (has_custom_logo()) {
+                the_custom_logo();
+            }
             ?>
-            <img class="logo" style="width:200px; height:60px;" src="<?php echo $image[0]; ?>">
-            <?php else: ?>
-                <h3 class='brand-name text-primary'><?php esc_html_e(bloginfo('name')); ?></h3>
-            <?php endif; ?>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
