@@ -12,7 +12,7 @@
         <div class="p-0">
             <?php get_template_part('template-parts/components/blog/entry-header'); ?>
         </div>
-        <div class="post-body px-3 py-3">
+        <div class="post-body px-3 mb-3">
             <?php get_template_part('template-parts/components/blog/entry-meta'); ?>
             <?php get_template_part('template-parts/components/blog/entry-content'); ?>
         </div>

@@ -1,0 +1,1 @@
+'<time class="meta-time entry-date published updated" datetime="%1$s">%2$s</time>'

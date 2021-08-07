@@ -28,3 +28,5 @@ img{
 }
 .link{text-decoration:none;}
 .border-gray{border:1px solid #eee;}
+.hide{display:none;}
+.text-sm{font-size:13px;}

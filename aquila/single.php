@@ -11,24 +11,18 @@
 
 <div class="primary">
     <main id="main" class="site-main mt-5" role="main">
-        <?php if(have_posts()): ?>
-            <div class="container">
-              <?php the_post(); ?>
-                    <h2 class="mb-2">
-                    <a class="link" href="<?php echo esc_url(the_permalink());?>">
-                            <?php echo esc_html(the_title());?>
-                    </a>
-                </h2>
-                <?php
-                    if(has_post_thumbnail()){ 
-                        the_post_thumbnail();
-                    }
-                ?>
-                <p class="lead">
-                    <?php echo esc_html(the_excerpt());?>
-                </p>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <?php if (have_posts()) : the_post(); ?>
+                        <?php get_template_part('template-parts/content/single-post'); ?>
+                    <?php endif; ?>
+                </div>
+                <div class="col-md-4">
+                    <?php get_sidebar(); ?>
+                </div>
             </div>
-        <?php endif; ?>
+        </div>
     </main>
 </div>
 
