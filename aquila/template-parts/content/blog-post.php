@@ -12,12 +12,13 @@
         <div class="p-0">
             <?php get_template_part('template-parts/components/blog/entry-header'); ?>
         </div>
-        <div class="post-body px-3 mb-3">
+        <div class="post-meta my-2 px-3">
             <?php get_template_part('template-parts/components/blog/entry-meta'); ?>
-            <?php get_template_part('template-parts/components/blog/entry-content'); ?>
-        </div>
-        <div class="post-footer px-3 py-3">
+            <hr class="my-0 mb-1">
             <?php get_template_part('template-parts/components/blog/entry-footer'); ?>
+        </div>
+        <div class="post-body px-3 mb-3">
+            <?php get_template_part('template-parts/components/blog/entry-content'); ?>
         </div>
     </div>
 </article>

@@ -70,9 +70,38 @@
      $author_name = get_the_author();
      $byline = sprintf(
             esc_html_x('%1$s %2$s', 'post author', TEXT_DOMAIN ),
-            "<span class='fw-bold'>Posted By : </span>",
+            "<span class='fw-bold'>By : </span>",
             "<span class='author meta-author'><a class='link' href='" . esc_url( get_author_posts_url($author_id) ) . "'>".$author_name."</a></span>"
      );
 
      echo "<span class='byline text-secondary text-sm'>" . $byline ."</span>";
  }
+
+// Aquila Custom Excerpt
+function aquila_the_excerpt(
+    $trim_character_count = 0
+) {
+    if (has_excerpt() || 0 === $trim_character_count
+    ) {
+        the_excerpt();
+        return;
+    }
+
+    $excerpt = wp_html_excerpt(get_the_excerpt(get_the_id()), $trim_character_count, '[...]');
+    echo $excerpt;
+}
+
+
+function aquila_excerpt_more($more = '')
+{
+
+    if (!is_single()) {
+        $more = sprintf(
+            '<a class="aquila-read-more text-white d-block link" href="%1$s"><button class="mt-3 text-light btn btn-sm btn-info">%2$s</button></a>',
+            get_permalink(get_the_ID()),
+            __('Read more', TEXT_DOMAIN)
+        );
+    }
+
+    return $more;
+}

@@ -30,3 +30,5 @@ img{
 .border-gray{border:1px solid #eee;}
 .hide{display:none;}
 .text-sm{font-size:13px;}
+.ml-auto{margin-left:auto;}
+.mr-auto{margin-right:auto;}

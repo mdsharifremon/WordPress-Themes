@@ -15,7 +15,7 @@ $footer_menu = wp_get_nav_menu_items($footer_menu_id);
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="<?php echo esc_url(bloginfo('url')) ?>">
             <?php
             if (has_custom_logo()):
                 $custom_logo_id = get_theme_mod('custom_logo');
@@ -52,7 +52,7 @@ $footer_menu = wp_get_nav_menu_items($footer_menu_id);
                                     </a>
                                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                         <?php foreach($child_menu_items as $child_menu_item): ?>
-                                            <li>
+                                        <li>
                                            <a class="dropdown-item" href="<?php echo esc_url($child_menu_item->url); ?>">
                                                 <?php echo esc_html($child_menu_item->title);?>
                                             </a>

@@ -6,7 +6,7 @@
  */
 ?>
 
-<aside class="sidebar">
-    <h4 class="text-primary mb-3">Search</h4>
+<aside class="sidebar ">
+    <h4 class="text-primary my-3">Search</h4>
     <?php get_search_form(); ?>
 </aside>

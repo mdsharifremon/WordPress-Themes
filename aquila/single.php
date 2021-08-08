@@ -18,7 +18,7 @@
                         <?php get_template_part('template-parts/content/single-post'); ?>
                     <?php endif; ?>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 px-3 shadow-sm rounded">
                     <?php get_sidebar(); ?>
                 </div>
             </div>
