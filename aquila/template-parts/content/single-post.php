@@ -8,7 +8,7 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class('single-post'); ?>>
-    <div class="rounded border-gray overflow-hidden shadow-sm">
+    <div class="">
         <div class="p-0">
             <?php get_template_part('template-parts/components/blog/entry-header'); ?>
         </div>

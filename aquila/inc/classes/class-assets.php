@@ -37,12 +37,17 @@ class Assets{
         // Bootstrap Script
         wp_register_script('Bootstrap Script', AQUILA_DIR_URI . '/assets/src/library/js/bootstrap.min.js', ['jquery'], false, true);
 
+        // Clock Script
+        wp_register_script('Clock Script', AQUILA_DIR_URI . '/assets/src/js/clock.js', ['jquery'], false, true);
+
         // Main Script
-        wp_register_script('Main Script', AQUILA_DIR_URI . '/assets/src/js/main.js', [], filemtime(AQUILA_DIR_PATH . '/assets/src/js/main.js'), true);
+        wp_register_script('Main Script', AQUILA_DIR_URI . '/assets/src/js/main.js', ['jquery'], filemtime(AQUILA_DIR_PATH . '/assets/src/js/main.js'), true);
+
 
 
         // Enqueue Scripts
         wp_enqueue_script('Bootstrap Script');
+        wp_enqueue_script('Clock Script');
         wp_enqueue_script('Main Script');
     }
 }

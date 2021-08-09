@@ -91,7 +91,7 @@ function aquila_the_excerpt(
     echo $excerpt;
 }
 
-
+// Aquila Read More Button
 function aquila_excerpt_more($more = '')
 {
 
@@ -104,4 +104,55 @@ function aquila_excerpt_more($more = '')
     }
 
     return $more;
+}
+
+// // Aquila Pagination 
+// function aquila_pagination()
+// {
+
+//   $allowed_tags = [ 
+//             'span' => [ 
+//                 'class' => []
+//             ],
+//             'a' => [ 
+//                 'class' => ['btn btn-outline-secondary'], 
+//                 'href' => [] 
+//             ],
+//   ];
+//   $arg = [
+//         'before_page_number' => '<span class="btn btn-sm btn-outline-primary mr-2 mb-2">',
+//         'before_page_number' => '</span>'
+
+//     ];
+
+//   printf("<nav class='pagination clearfix'>%s</nav>",
+//            wp_kses(paginate_links($arg), $allowed_tags),
+//    );
+
+// }
+
+/**
+ * Aquila Pagination.
+ *
+ * @return void
+ */
+function aquila_pagination()
+{
+
+    $allowed_tags = [
+        'span' => [
+            'class' => []
+        ],
+        'a' => [
+            'class' => [],
+            'href' => [],
+        ]
+    ];
+
+    $args = [
+        'before_page_number' => '<span class="btn btn-sm btn-outline-secondary mr-2 mb-2">',
+        'after_page_number' => '</span>',
+    ];
+
+    printf('<nav class="aquila-pagination clearfix">%s</nav>', wp_kses(paginate_links($args), $allowed_tags));
 }

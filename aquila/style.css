@@ -32,3 +32,30 @@ img{
 .text-sm{font-size:13px;}
 .ml-auto{margin-left:auto;}
 .mr-auto{margin-right:auto;}
+
+.prev, .next{
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+    border-radius: 0.2rem;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    border: 1px solid transparent;
+    color: #6c757d;
+    border-color: #6c757d;
+    margin-bottom: 0.5rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.prev:hover, .next:hover, span.current> span.btn{
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+
+

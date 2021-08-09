@@ -6,7 +6,6 @@
  */
 ?>
 
-<aside class="sidebar ">
-    <h4 class="text-primary my-3">Search</h4>
-    <?php get_search_form(); ?>
+<aside class="sidebar pt-3">
+    <?php dynamic_sidebar('sidebar-1'); ?>
 </aside>

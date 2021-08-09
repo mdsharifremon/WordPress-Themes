@@ -18,6 +18,8 @@ use AQUILA_THEME\Inc\Traits\Singleton;
         Menus::get_instance();
         Admin::get_instance();
         Meta_Boxes::get_instance();
+        Clock_Widgets::get_instance();
+        Sidebars::get_instance();
 
         // Load Hooks
         $this->set_hooks();

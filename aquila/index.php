@@ -24,9 +24,27 @@
                     <?php
                     $index = 0;
                     $num_of_col = 3;
-                    $page_id = $_GET['page_id'];
+
                     $site_url = $_SERVER['PHP_SELF'];
-                    $self_url = $site_url . "?page_id=" . $page_id;
+                    $page_slug = '';
+                    $page_slug_value = '';
+
+
+                    if (isset($_GET['page_id'])) {
+
+                        $page_slug = 'page_id';
+                        $page_slug_value = $_GET['page_id'];
+                    } else if (isset($_GET['tag'])) {
+
+                        $page_slug = 'tag';
+                        $page_slug_value = $_GET['tag'];
+                    } elseif (isset($_GET['cat'])) {
+
+                        $page_slug = 'cat';
+                        $page_slug_value = $_GET['cat'];
+                    }
+
+                    $self_url = $site_url . "?" . $page_slug . "=" . $page_slug_value;
                     $view = (isset($_GET['view'])) ? $_GET['view'] : 'grid';
                     ?>
                     <div class="col-12 py-2">
@@ -42,8 +60,11 @@
                                             <?php get_template_part('template-parts/content/blog-post'); ?>
                                         </div>
                                     <?php endwhile; ?>
+                                    <div class="col-12 d-flex justify-content-center">
+                                        <?php aquila_pagination();  ?>
+                                    </div>
                                 </div>
-                                <div class="col-md-4 shadow-sm rounded border-gray">
+                                <div class="col-md-4 shadow-sm rounded">
                                     <?php get_sidebar(); ?>
                                 </div>
                             </div>
@@ -61,14 +82,19 @@
                                 </div>
                             <?php endif; ?>
                         <?php endwhile; ?>
+                        <div class="col-12 d-flex justify-content-center">
+                            <?php aquila_pagination();  ?>
+                        </div>
                     <?php endif; ?>
                 </div>
             </div>
+
         <?php
         else :
             get_template_part('template-parts/content/content-none');
         endif;
         ?>
+
     </main>
 </div>
 
