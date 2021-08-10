@@ -70,9 +70,9 @@ use AQUILA_THEME\Inc\Traits\Singleton;
                                   ));
 
       /** Editor Support */
-      add_editor_style();
       add_theme_support('wp-block-styles');
       add_theme_support('align-wide');
+      add_editor_style();
 
       /** Set Max Content Width */
       global $content_width;      

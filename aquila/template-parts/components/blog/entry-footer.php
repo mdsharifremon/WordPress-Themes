@@ -18,10 +18,10 @@ if(empty($post_terms) || ! is_array($post_terms)){
 
 ?>
 
-<div class="taxonomies mt-2 mb-3">
+<div class="taxonomies mt-2 mb-2">
     <?php foreach ($post_terms as $taxonomy => $terms): ?>
         <?php echo esc_url(get_the_excerpt($terms)); ?>
-        <a  href="<?php echo esc_url(get_term_link($terms)); ?>"class='btn btn-sm btn-outline-secondary mr-1'>
+        <a  href="<?php echo esc_url(get_term_link($terms)); ?>"class='btn btn-sm btn-outline-secondary mr-1 mb-2'>
         <?php echo $terms->name; ?>
     </a>
     <?php endforeach; ?>
