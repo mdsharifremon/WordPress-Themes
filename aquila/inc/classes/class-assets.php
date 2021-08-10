@@ -21,35 +21,23 @@ class Assets{
 
     public function register_styles()
     {
-        wp_register_style("Fonts", AQUILA_DIR_URI . "/assets/src/library/fonts/fonts.css", [], false, 'all');
-        // Bootstrap Style
-        wp_register_style("Bootstrap", AQUILA_DIR_URI . "/assets/src/library/css/Bootstrap.css", [], filemtime(AQUILA_DIR_PATH . "/assets/src/library/css/Bootstrap.css"), 'all');
+        // Main Stylesheet
+        wp_register_style("Main Style", AQUILA_BUILD_CSS_URI . '/main.css', [], filemtime(AQUILA_BUILD_CSS_PATH . '/main.css'), 'all');
 
-        // Custom Stylesheet
-        wp_register_style('Main Style', get_stylesheet_uri(), [], filemtime(get_template_directory() . './style.css'), 'all');
+        // Custom StyleSheet
+        wp_register_style('Custom Style', get_stylesheet_uri(), [], filemtime(get_template_directory() . './style.css'), 'all');
 
         // Enqueue Styles
-        wp_enqueue_style('Fonts');
-        wp_enqueue_style('Bootstrap');
         wp_enqueue_style('Main Style');
+        wp_enqueue_style('Custom Style');
     }
 
     public function register_scripts()
     {
-        // Bootstrap Script
-        wp_register_script('Bootstrap Script', AQUILA_BUILD_URI . '/library/js/bootstrap.min.js', ['jquery'], false, true);
-
-        // Clock Script
-        wp_register_script('Clock Script', AQUILA_BUILD_JS_URI . '/clock.js', ['jquery'], false, true);
-
         // Main Script
         wp_register_script('Main Script', AQUILA_BUILD_JS_URI . '/main.js', ['jquery'], filemtime(AQUILA_BUILD_JS_PATH . '/main.js'), true);
 
-
-
         // Enqueue Scripts
-        wp_enqueue_script('Bootstrap Script');
-        wp_enqueue_script('Clock Script');
         wp_enqueue_script('Main Script');
     }
 }
