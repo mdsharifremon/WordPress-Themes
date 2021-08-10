@@ -23,14 +23,9 @@ stylelint-config-wordpress stylelint-webpack-plugin uglifyjs-webpack-plugin
     webpack-dev-server
     clean-webpack-plugin
     copy-webpack-plugin
-
-# Loader 
-    css-loader
-    sass-loader
-    file-loader
-    style-loader
-    file-loader
-
+```
+#### Webpack Helpers
+```cmd 
     lodash
     node-sass
     sass-mq
@@ -42,7 +37,15 @@ stylelint-config-wordpress stylelint-webpack-plugin uglifyjs-webpack-plugin
     cross-env 
     uglifyjs-webpack-plugin
     @svgr/cli
+```
+#### Loader 
 
+```cmd
+    css-loader
+    sass-loader
+    file-loader
+    style-loader
+    file-loader
 ```
 #### Stylelint
 
