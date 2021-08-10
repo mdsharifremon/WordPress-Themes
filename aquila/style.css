@@ -12,6 +12,10 @@ Description: Aquilla is custom wordpress theme with elegant design and modern lo
 Text Domain: Aquila
 */
 
+body{
+    font-family:"lato, san-serif" !important;
+}
+
 *{
     padding: 0;
     margin: 0;

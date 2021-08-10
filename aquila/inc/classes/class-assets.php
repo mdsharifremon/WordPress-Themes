@@ -21,6 +21,7 @@ class Assets{
 
     public function register_styles()
     {
+        wp_register_style("Fonts", AQUILA_DIR_URI . "/assets/src/library/fonts/fonts.css", [], false, 'all');
         // Bootstrap Style
         wp_register_style("Bootstrap", AQUILA_DIR_URI . "/assets/src/library/css/Bootstrap.css", [], filemtime(AQUILA_DIR_PATH . "/assets/src/library/css/Bootstrap.css"), 'all');
 
@@ -28,6 +29,7 @@ class Assets{
         wp_register_style('Main Style', get_stylesheet_uri(), [], filemtime(get_template_directory() . './style.css'), 'all');
 
         // Enqueue Styles
+        wp_enqueue_style('Fonts');
         wp_enqueue_style('Bootstrap');
         wp_enqueue_style('Main Style');
     }
@@ -35,13 +37,13 @@ class Assets{
     public function register_scripts()
     {
         // Bootstrap Script
-        wp_register_script('Bootstrap Script', AQUILA_DIR_URI . '/assets/src/library/js/bootstrap.min.js', ['jquery'], false, true);
+        wp_register_script('Bootstrap Script', AQUILA_BUILD_URI . '/library/js/bootstrap.min.js', ['jquery'], false, true);
 
         // Clock Script
-        wp_register_script('Clock Script', AQUILA_DIR_URI . '/assets/src/js/clock.js', ['jquery'], false, true);
+        wp_register_script('Clock Script', AQUILA_BUILD_JS_URI . '/clock.js', ['jquery'], false, true);
 
         // Main Script
-        wp_register_script('Main Script', AQUILA_DIR_URI . '/assets/src/js/main.js', ['jquery'], filemtime(AQUILA_DIR_PATH . '/assets/src/js/main.js'), true);
+        wp_register_script('Main Script', AQUILA_BUILD_JS_URI . '/main.js', ['jquery'], filemtime(AQUILA_BUILD_JS_PATH . '/main.js'), true);
 
 
 

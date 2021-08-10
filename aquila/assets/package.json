@@ -12,12 +12,7 @@
     "Aquila"
   ],
   "author": "Sharif Uddin",
-  "license": "MIT",
-  "private": true,
-  "browserslist":[
-    "defaults",
-
-  ],
+  "license": "ISC",
   "dependencies": {
     "bootstrap": "^5.0.2"
   }
