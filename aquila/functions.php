@@ -42,6 +42,17 @@ if (!defined('AQUILA_BUILD_IMG_URI')) {
   define('AQUILA_BUILD_IMG_URI', untrailingslashit(get_template_directory_uri() . '/assets/build/src/img'));
 }
 
+/** 
+ * Remove Gutenberg Block Styles 
+    function aquila_remove_block_styles(){
+      wp_dequeue_style('wp-block-library');
+      wp_dequeue_style('wp-block-library-theme');
+      wp_dequeue_style('wp-block-style'); // Remove WooCommerce Block Css
+
+    }
+    add_action('wp_enqueue_scripts', 'aquila_remove_block_styles', 100);
+*/
+
 // Autoload classes
 require_once AQUILA_DIR_PATH . '/inc/helpers/autoloader.php';
 require_once AQUILA_DIR_PATH . '/inc/helpers/template-tags.php';

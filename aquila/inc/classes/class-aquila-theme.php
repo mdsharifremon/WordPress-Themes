@@ -72,13 +72,10 @@ use AQUILA_THEME\Inc\Traits\Singleton;
       /** Editor Support */
       add_theme_support('wp-block-styles');
       add_theme_support('align-wide');
-      add_editor_style();
+      add_theme_support('editor-styles');
+      add_editor_style('assets/build/css/editor.css');
 
-      /** Set Max Content Width */
-      global $content_width;      
-      if(! isset($content_width)){ 
-        $content_width = 1240;
-      }
+      
 
       /** custom background **/
       $bg_defaults = array(
@@ -111,6 +108,12 @@ use AQUILA_THEME\Inc\Traits\Singleton;
         'flex-width'  => true,
         'header-text' => array('site-title', 'site-description'),
       ));
+
+      /** Set Max Content Width */
+      global $content_width;
+      if (!isset($content_width)) {
+        $content_width = 1240;
+      }
    }
 
 

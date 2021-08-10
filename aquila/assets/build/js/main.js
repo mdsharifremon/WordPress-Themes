@@ -95,32 +95,6 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
 /***/ }),
 
-/***/ "./src/sass/blocks.scss":
-/*!******************************!*\
-  !*** ./src/sass/blocks.scss ***!
-  \******************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-// extracted by mini-css-extract-plugin
-
-
-/***/ }),
-
-/***/ "./src/sass/editor.scss":
-/*!******************************!*\
-  !*** ./src/sass/editor.scss ***!
-  \******************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-// extracted by mini-css-extract-plugin
-
-
-/***/ }),
-
 /***/ "./src/sass/main.scss":
 /*!****************************!*\
   !*** ./src/sass/main.scss ***!
@@ -245,14 +219,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _clock__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_clock__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _sass_main_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../sass/main.scss */ "./src/sass/main.scss");
 /* harmony import */ var _sass_single_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../sass/single.scss */ "./src/sass/single.scss");
-/* harmony import */ var _sass_blocks_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../sass/blocks.scss */ "./src/sass/blocks.scss");
-/* harmony import */ var _sass_editor_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../sass/editor.scss */ "./src/sass/editor.scss");
 /** Import Js Files */
 
 
 /* Import Sass Files */
-
-
 
 
 
