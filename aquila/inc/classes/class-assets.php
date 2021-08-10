@@ -17,6 +17,16 @@ class Assets{
         // All actions && filters
         add_action('wp_enqueue_scripts', [$this, 'register_styles']);
         add_action('wp_enqueue_scripts', [$this, 'register_scripts']);
+
+        /** 
+         * Remove Gutenberg Block Styles 
+            function aquila_remove_block_styles(){
+                wp_dequeue_style('wp-block-library');
+                wp_dequeue_style('wp-block-library-theme');
+                wp_dequeue_style('wp-block-style'); // Remove WooCommerce Block Css
+            }
+            add_action('wp_enqueue_scripts', 'aquila_remove_block_styles', 100);
+         */
     }
 
     public function register_styles()
