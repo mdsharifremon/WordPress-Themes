@@ -99,9 +99,25 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 /*!****************************!*\
   !*** ./src/sass/main.scss ***!
   \****************************/
-/***/ (() => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-throw new Error("Module build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):\nModuleBuildError: Module build failed (from ./node_modules/css-loader/dist/cjs.js):\nError: Can't resolve '../library/fonts/fonts.css' in 'F:\\xamp\\htdocs\\themedev\\blog\\wp-content\\themes\\aquila\\assets\\src\\sass'\n    at finishWithoutResolve (F:\\xamp\\htdocs\\themedev\\blog\\wp-content\\themes\\aquila\\assets\\node_modules\\enhanced-resolve\\lib\\Resolver.js:293:18)\n    at F:\\xamp\\htdocs\\themedev\\blog\\wp-content\\themes\\aquila\\assets\\node_modules\\enhanced-resolve\\lib\\Resolver.js:362:15\n    at F:\\xamp\\htdocs\\themedev\\blog\\wp-content\\themes\\aquila\\assets\\node_modules\\enhanced-resolve\\lib\\Resolver.js:410:5\n    at eval (eval at create (F:\\xamp\\htdocs\\themedev\\blog\\wp-content\\themes\\aquila\\assets\\node_modules\\tapable\\lib\\HookCodeFactory.js:33:10), <anonymous>:16:1)\n    at F:\\xamp\\htdocs\\themedev\\blog\\wp-content\\themes\\aquila\\assets\\node_modules\\enhanced-resolve\\lib\\Resolver.js:410:5\n    at eval (eval at create (F:\\xamp\\htdocs\\themedev\\blog\\wp-content\\themes\\aquila\\assets\\node_modules\\tapable\\lib\\HookCodeFactory.js:33:10), <anonymous>:27:1)\n    at F:\\xamp\\htdocs\\themedev\\blog\\wp-content\\themes\\aquila\\assets\\node_modules\\enhanced-resolve\\lib\\DescriptionFilePlugin.js:87:43\n    at F:\\xamp\\htdocs\\themedev\\blog\\wp-content\\themes\\aquila\\assets\\node_modules\\enhanced-resolve\\lib\\Resolver.js:410:5\n    at eval (eval at create (F:\\xamp\\htdocs\\themedev\\blog\\wp-content\\themes\\aquila\\assets\\node_modules\\tapable\\lib\\HookCodeFactory.js:33:10), <anonymous>:15:1)\n    at F:\\xamp\\htdocs\\themedev\\blog\\wp-content\\themes\\aquila\\assets\\node_modules\\enhanced-resolve\\lib\\Resolver.js:410:5\n    at eval (eval at create (F:\\xamp\\htdocs\\themedev\\blog\\wp-content\\themes\\aquila\\assets\\node_modules\\tapable\\lib\\HookCodeFactory.js:33:10), <anonymous>:16:1)\n    at F:\\xamp\\htdocs\\themedev\\blog\\wp-content\\themes\\aquila\\assets\\node_modules\\enhanced-resolve\\lib\\RootsPlugin.js:37:38\n    at _next2 (eval at create (F:\\xamp\\htdocs\\themedev\\blog\\wp-content\\themes\\aquila\\assets\\node_modules\\tapable\\lib\\HookCodeFactory.js:33:10), <anonymous>:8:1)\n    at eval (eval at create (F:\\xamp\\htdocs\\themedev\\blog\\wp-content\\themes\\aquila\\assets\\node_modules\\tapable\\lib\\HookCodeFactory.js:33:10), <anonymous>:31:1)\n    at F:\\xamp\\htdocs\\themedev\\blog\\wp-content\\themes\\aquila\\assets\\node_modules\\enhanced-resolve\\lib\\ConditionalPlugin.js:40:47\n    at _next1 (eval at create (F:\\xamp\\htdocs\\themedev\\blog\\wp-content\\themes\\aquila\\assets\\node_modules\\tapable\\lib\\HookCodeFactory.js:33:10), <anonymous>:23:1)\n    at processResult (F:\\xamp\\htdocs\\themedev\\blog\\wp-content\\themes\\aquila\\assets\\node_modules\\webpack\\lib\\NormalModule.js:713:19)\n    at F:\\xamp\\htdocs\\themedev\\blog\\wp-content\\themes\\aquila\\assets\\node_modules\\webpack\\lib\\NormalModule.js:819:5\n    at F:\\xamp\\htdocs\\themedev\\blog\\wp-content\\themes\\aquila\\assets\\node_modules\\loader-runner\\lib\\LoaderRunner.js:399:11\n    at F:\\xamp\\htdocs\\themedev\\blog\\wp-content\\themes\\aquila\\assets\\node_modules\\loader-runner\\lib\\LoaderRunner.js:251:18\n    at context.callback (F:\\xamp\\htdocs\\themedev\\blog\\wp-content\\themes\\aquila\\assets\\node_modules\\loader-runner\\lib\\LoaderRunner.js:124:13)\n    at Object.loader (F:\\xamp\\htdocs\\themedev\\blog\\wp-content\\themes\\aquila\\assets\\node_modules\\css-loader\\dist\\index.js:155:5)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)");
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./src/sass/single.scss":
+/*!******************************!*\
+  !*** ./src/sass/single.scss ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
 
 /***/ }),
 
@@ -202,11 +218,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _clock__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./clock */ "./src/js/clock/index.js");
 /* harmony import */ var _clock__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_clock__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _sass_main_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../sass/main.scss */ "./src/sass/main.scss");
-/* harmony import */ var _sass_main_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_sass_main_scss__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _sass_single_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../sass/single.scss */ "./src/sass/single.scss");
 /** Import Js Files */
 
 
 /* Import Sass Files */
+
 
 
 })();

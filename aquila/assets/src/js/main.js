@@ -5,4 +5,6 @@ import "./clock";
 
 /* Import Sass Files */
 import "../sass/main.scss";
+import "../sass/single.scss";
+
 

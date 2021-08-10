@@ -33,33 +33,6 @@ const Output = {
 	filename: 'js/[name].js'
 };
 
-/**
- * Plugins
- * Note: argv.mode will return 'development' or 'production'.
- */
-const plugins = (argv) => [
-	new CleanWebpackPlugin({
-		/**
-		 * Automatically remove all unused webpack assets on rebuild, 
-		 * when set to mode = production. 
-		 */
-		cleanStaleWebpackAssets: "production" === argv.mode,
-	}),
-
-	new MiniCssExtractPlugin({
-		filename: "css/[name].css",
-	}),
-
-	new CopyPlugin({
-		patterns: [{ from: LIB_DIR, to: BUILD_DIR + "/library" }],
-	}),
-
-	new DependencyExtractionWebpackPlugin({
-		injectPolyfill: true,
-		combineAssets: true,
-	}),
-];
-
 /** Set Loader Rules */
 const Rules = [
 	{
@@ -98,6 +71,33 @@ const Rules = [
 			}
 		}
 	}
+];
+
+/**
+ * Plugins
+ * Note: argv.mode will return 'development' or 'production'.
+ */
+const plugins = (argv) => [
+	new CleanWebpackPlugin({
+		/**
+		 * Automatically remove all unused webpack assets on rebuild, 
+		 * when set to mode = production. 
+		 */
+		cleanStaleWebpackAssets: "production" === argv.mode,
+	}),
+
+	new MiniCssExtractPlugin({
+		filename: "css/[name].css",
+	}),
+
+	new CopyPlugin({
+		patterns: [{ from: LIB_DIR, to: BUILD_DIR + "/library" }],
+	}),
+
+	new DependencyExtractionWebpackPlugin({
+		injectPolyfill: true,
+		combineAssets: true,
+	}),
 ];
 
 /** Code Minimizer */
