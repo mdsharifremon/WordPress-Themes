@@ -66,6 +66,8 @@ class Theme_Support{
         add_theme_support('editor-styles');
         add_editor_style('assets/build/css/editor.css');
 
+        /** Remove Core Block Pattern */
+        // remove_theme_support('core-block-patterns');
 
         /** custom background **/
         $bg_defaults = array(
